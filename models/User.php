@@ -1,21 +1,21 @@
 <?php
 
 /*
- * This file is part of the Dektrium project.
+ * This file is part of the Amin project.
  *
- * (c) Dektrium project <http://github.com/dektrium/>
+ * (c) Amin project <http://github.com/aminbbb92/>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace dektrium\user\models;
+namespace aminbbb92\user\models;
 
-use dektrium\user\Finder;
-use dektrium\user\helpers\Password;
-use dektrium\user\Mailer;
-use dektrium\user\Module;
-use dektrium\user\traits\ModuleTrait;
+use aminbbb92\user\Finder;
+use aminbbb92\user\helpers\Password;
+use aminbbb92\user\Mailer;
+use aminbbb92\user\Module;
+use aminbbb92\user\traits\ModuleTrait;
 use yii\base\NotSupportedException;
 use yii\behaviors\TimestampBehavior;
 use yii\db\ActiveRecord;

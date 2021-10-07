@@ -1,6 +1,6 @@
 <?php
 
-use \dektrium\user\models\Token;
+use \aminbbb92\user\models\Token;
 
 $time = time();
 

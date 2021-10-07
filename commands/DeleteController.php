@@ -1,17 +1,17 @@
 <?php
 
 /*
- * This file is part of the Dektrium project.
+ * This file is part of the Amin project.
  *
- * (c) Dektrium project <http://github.com/dektrium/>
+ * (c) Amin project <http://github.com/aminbbb92/>
  *
  * For the full copyright and license information, please view the LICENSE.md
  * file that was distributed with this source code.
  */
 
-namespace dektrium\user\commands;
+namespace aminbbb92\user\commands;
 
-use dektrium\user\Finder;
+use aminbbb92\user\Finder;
 use Yii;
 use yii\console\Controller;
 use yii\helpers\Console;
@@ -19,7 +19,7 @@ use yii\helpers\Console;
 /**
  * Deletes a user.
  *
- * @property \dektrium\user\Module $module
+ * @property \aminbbb92\user\Module $module
  *
  * @author Dmitry Erofeev <dmeroff@gmail.com>
  */

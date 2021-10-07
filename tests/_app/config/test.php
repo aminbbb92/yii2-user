@@ -5,15 +5,15 @@ return [
     'basePath' => dirname(__DIR__),
     'language' => 'en-US',
     'aliases' => [
-        '@dektrium/user' => dirname(dirname(dirname(__DIR__))),
+        '@aminbbb92/user' => dirname(dirname(dirname(__DIR__))),
         '@tests' => dirname(dirname(__DIR__)),
         '@vendor' => VENDOR_DIR,
         '@bower' => VENDOR_DIR . '/bower-asset',
     ],
-    'bootstrap' => ['dektrium\user\Bootstrap'],
+    'bootstrap' => ['aminbbb92\user\Bootstrap'],
     'modules' => [
         'user' => [
-            'class' => 'dektrium\user\Module',
+            'class' => 'aminbbb92\user\Module',
             'admins' => ['user'],
         ],
     ],

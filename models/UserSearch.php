@@ -1,17 +1,17 @@
 <?php
 
 /*
- * This file is part of the Dektrium project.
+ * This file is part of the Amin project.
  *
- * (c) Dektrium project <http://github.com/dektrium/>
+ * (c) Amin project <http://github.com/aminbbb92/>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace dektrium\user\models;
+namespace aminbbb92\user\models;
 
-use dektrium\user\Finder;
+use aminbbb92\user\Finder;
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;

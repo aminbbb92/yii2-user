@@ -7,10 +7,10 @@ You can change controller's layout using `controllerMap` module's property:
 ```php
 'modules' => [
     'user' => [
-        'class' => 'dektrium\user\Module',
+        'class' => 'aminbbb92\user\Module',
         'controllerMap' => [
             'admin' => [
-                'class'  => 'dektrium\user\controllers\AdminController',
+                'class'  => 'aminbbb92\user\controllers\AdminController',
                 'layout' => '//admin-layout',
             ],
         ],
@@ -33,14 +33,14 @@ You can use Login widget to achieve this:
 ```php
 <?php
 
-use dektrium\user\widgets\Login;
+use aminbbb92\user\widgets\Login;
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
 /**
  * @var yii\web\View              $this
- * @var dektrium\user\models\User $user
- * @var dektrium\user\Module      $module
+ * @var aminbbb92\user\models\User $user
+ * @var aminbbb92\user\Module      $module
  */
 
 $this->title = Yii::t('user', 'Sign up');
@@ -97,15 +97,15 @@ You can listen controller's events using `controllerMap` module's property:
 ```php
 'modules' => [
     'user' => [
-        'class' => 'dektrium\user\Module',
+        'class' => 'aminbbb92\user\Module',
         'controllerMap' => [
             'recovery' => [
-                'class' => \dektrium\user\controllers\RecoveryController::class,
-                'on ' . \dektrium\user\controllers\RecoveryController::EVENT_AFTER_REQUEST => function (\dektrium\user\events\FormEvent $event) {
+                'class' => \aminbbb92\user\controllers\RecoveryController::class,
+                'on ' . \aminbbb92\user\controllers\RecoveryController::EVENT_AFTER_REQUEST => function (\aminbbb92\user\events\FormEvent $event) {
                     \Yii::$app->controller->redirect(['/user/login']);
                     \Yii::$app->end();
                 },
-                'on ' . \dektrium\user\controllers\RecoveryController::EVENT_AFTER_RESET => function (\dektrium\user\events\ResetPasswordEvent $event) {
+                'on ' . \aminbbb92\user\controllers\RecoveryController::EVENT_AFTER_RESET => function (\aminbbb92\user\events\ResetPasswordEvent $event) {
                     if ($event->token->user ?? false) {
                         \Yii::$app->user->login($event->token->user);
                     }
@@ -114,12 +114,12 @@ You can listen controller's events using `controllerMap` module's property:
                 },
             ],
             'registration' => [
-                'class' => \dektrium\user\controllers\RegistrationController::class,
-                'on ' . \dektrium\user\controllers\RegistrationController::EVENT_AFTER_REGISTER => function (\dektrium\user\events\FormEvent $event) {
+                'class' => \aminbbb92\user\controllers\RegistrationController::class,
+                'on ' . \aminbbb92\user\controllers\RegistrationController::EVENT_AFTER_REGISTER => function (\aminbbb92\user\events\FormEvent $event) {
                     \Yii::$app->controller->redirect(['/user/login']);
                     \Yii::$app->end();
                 },
-                'on ' . \dektrium\user\controllers\RegistrationController::EVENT_AFTER_RESEND => function (\dektrium\user\events\FormEvent $event) {
+                'on ' . \aminbbb92\user\controllers\RegistrationController::EVENT_AFTER_RESEND => function (\aminbbb92\user\events\FormEvent $event) {
                     \Yii::$app->controller->redirect(['/user/login']);
                     \Yii::$app->end();
                 },

@@ -1,23 +1,23 @@
 <?php
 
 /*
- * This file is part of the Dektrium project.
+ * This file is part of the Amin project.
  *
- * (c) Dektrium project <http://github.com/dektrium>
+ * (c) Amin project <http://github.com/aminbbb92>
  *
  * For the full copyright and license information, please view the LICENSE.md
  * file that was distributed with this source code.
  */
 
-use dektrium\user\widgets\Connect;
-use dektrium\user\models\LoginForm;
+use aminbbb92\user\widgets\Connect;
+use aminbbb92\user\models\LoginForm;
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
 /**
  * @var yii\web\View $this
- * @var dektrium\user\models\LoginForm $model
- * @var dektrium\user\Module $module
+ * @var aminbbb92\user\models\LoginForm $model
+ * @var aminbbb92\user\Module $module
  */
 
 $this->title = Yii::t('user', 'Sign in');

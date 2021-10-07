@@ -1,22 +1,22 @@
 <?php
 
 /*
- * This file is part of the Dektrium project.
+ * This file is part of the Amin project.
  *
- * (c) Dektrium project <http://github.com/dektrium/>
+ * (c) Amin project <http://github.com/aminbbb92/>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace dektrium\user\controllers;
+namespace aminbbb92\user\controllers;
 
-use dektrium\user\Finder;
-use dektrium\user\models\RegistrationForm;
-use dektrium\user\models\ResendForm;
-use dektrium\user\models\User;
-use dektrium\user\traits\AjaxValidationTrait;
-use dektrium\user\traits\EventTrait;
+use aminbbb92\user\Finder;
+use aminbbb92\user\models\RegistrationForm;
+use aminbbb92\user\models\ResendForm;
+use aminbbb92\user\models\User;
+use aminbbb92\user\traits\AjaxValidationTrait;
+use aminbbb92\user\traits\EventTrait;
 use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
@@ -25,7 +25,7 @@ use yii\web\NotFoundHttpException;
  * RegistrationController is responsible for all registration process, which includes registration of a new account,
  * resending confirmation tokens, email confirmation and registration via social networks.
  *
- * @property \dektrium\user\Module $module
+ * @property \aminbbb92\user\Module $module
  *
  * @author Dmitry Erofeev <dmeroff@gmail.com>
  */
@@ -36,49 +36,49 @@ class RegistrationController extends Controller
 
     /**
      * Event is triggered after creating RegistrationForm class.
-     * Triggered with \dektrium\user\events\FormEvent.
+     * Triggered with \aminbbb92\user\events\FormEvent.
      */
     const EVENT_BEFORE_REGISTER = 'beforeRegister';
 
     /**
      * Event is triggered after successful registration.
-     * Triggered with \dektrium\user\events\FormEvent.
+     * Triggered with \aminbbb92\user\events\FormEvent.
      */
     const EVENT_AFTER_REGISTER = 'afterRegister';
 
     /**
      * Event is triggered before connecting user to social account.
-     * Triggered with \dektrium\user\events\UserEvent.
+     * Triggered with \aminbbb92\user\events\UserEvent.
      */
     const EVENT_BEFORE_CONNECT = 'beforeConnect';
 
     /**
      * Event is triggered after connecting user to social account.
-     * Triggered with \dektrium\user\events\UserEvent.
+     * Triggered with \aminbbb92\user\events\UserEvent.
      */
     const EVENT_AFTER_CONNECT = 'afterConnect';
 
     /**
      * Event is triggered before confirming user.
-     * Triggered with \dektrium\user\events\UserEvent.
+     * Triggered with \aminbbb92\user\events\UserEvent.
      */
     const EVENT_BEFORE_CONFIRM = 'beforeConfirm';
 
     /**
      * Event is triggered before confirming user.
-     * Triggered with \dektrium\user\events\UserEvent.
+     * Triggered with \aminbbb92\user\events\UserEvent.
      */
     const EVENT_AFTER_CONFIRM = 'afterConfirm';
 
     /**
      * Event is triggered after creating ResendForm class.
-     * Triggered with \dektrium\user\events\FormEvent.
+     * Triggered with \aminbbb92\user\events\FormEvent.
      */
     const EVENT_BEFORE_RESEND = 'beforeResend';
 
     /**
      * Event is triggered after successful resending of confirmation email.
-     * Triggered with \dektrium\user\events\FormEvent.
+     * Triggered with \aminbbb92\user\events\FormEvent.
      */
     const EVENT_AFTER_RESEND = 'afterResend';
 

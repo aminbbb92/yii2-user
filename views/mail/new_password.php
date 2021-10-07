@@ -1,9 +1,9 @@
 <?php
 
 /*
- * This file is part of the Dektrium project.
+ * This file is part of the Amin project.
  *
- * (c) Dektrium project <http://github.com/dektrium>
+ * (c) Amin project <http://github.com/aminbbb92>
  *
  * For the full copyright and license information, please view the LICENSE.md
  * file that was distributed with this source code.
@@ -12,9 +12,9 @@
 use yii\helpers\Html;
 
 /**
- * @var dektrium\user\Module          $module
- * @var dektrium\user\models\User     $user
- * @var dektrium\user\models\Password $password
+ * @var aminbbb92\user\Module          $module
+ * @var aminbbb92\user\models\User     $user
+ * @var aminbbb92\user\models\Password $password
  */
 
 ?>

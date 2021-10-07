@@ -1,27 +1,27 @@
 <?php
 
 /*
- * This file is part of the Dektrium project.
+ * This file is part of the Amin project.
  *
- * (c) Dektrium project <http://github.com/dektrium/>
+ * (c) Amin project <http://github.com/aminbbb92/>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace dektrium\user\traits;
+namespace aminbbb92\user\traits;
 
-use dektrium\user\events\AuthEvent;
-use dektrium\user\events\ConnectEvent;
-use dektrium\user\events\FormEvent;
-use dektrium\user\events\ProfileEvent;
-use dektrium\user\events\ResetPasswordEvent;
-use dektrium\user\events\UserEvent;
-use dektrium\user\models\Account;
-use dektrium\user\models\Profile;
-use dektrium\user\models\RecoveryForm;
-use dektrium\user\models\Token;
-use dektrium\user\models\User;
+use aminbbb92\user\events\AuthEvent;
+use aminbbb92\user\events\ConnectEvent;
+use aminbbb92\user\events\FormEvent;
+use aminbbb92\user\events\ProfileEvent;
+use aminbbb92\user\events\ResetPasswordEvent;
+use aminbbb92\user\events\UserEvent;
+use aminbbb92\user\models\Account;
+use aminbbb92\user\models\Profile;
+use aminbbb92\user\models\RecoveryForm;
+use aminbbb92\user\models\Token;
+use aminbbb92\user\models\User;
 use yii\authclient\ClientInterface;
 use yii\base\Model;
 

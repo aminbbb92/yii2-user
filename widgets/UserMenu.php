@@ -1,15 +1,15 @@
 <?php
 
 /*
- * This file is part of the Dektrium project.
+ * This file is part of the Amin project.
  *
- * (c) Dektrium project <http://github.com/dektrium>
+ * (c) Amin project <http://github.com/aminbbb92>
  *
  * For the full copyright and license information, please view the LICENSE.md
  * file that was distributed with this source code.
  */
 
-namespace dektrium\user\widgets;
+namespace aminbbb92\user\widgets;
 
 use yii\widgets\Menu;
 use Yii;
@@ -20,16 +20,16 @@ use yii\base\Widget;
  */
 class UserMenu extends Widget
 {
-    
-    /** @array \dektrium\user\models\RegistrationForm */
+
+    /** @array \aminbbb92\user\models\RegistrationForm */
     public $items;
-    
+
     public function init()
     {
         parent::init();
-        
+
         $networksVisible = count(Yii::$app->authClientCollection->clients) > 0;
-        
+
         $this->items = [
                 ['label' => Yii::t('user', 'Profile'), 'url' => ['/user/settings/profile']],
                 ['label' => Yii::t('user', 'Account'), 'url' => ['/user/settings/account']],
@@ -40,7 +40,7 @@ class UserMenu extends Widget
                 ],
             ];
     }
-    
+
     /**
      * @inheritdoc
      */

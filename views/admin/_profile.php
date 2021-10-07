@@ -1,9 +1,9 @@
 <?php
 
 /*
- * This file is part of the Dektrium project
+ * This file is part of the Amin project
  *
- * (c) Dektrium project <http://github.com/dektrium>
+ * (c) Amin project <http://github.com/aminbbb92>
  *
  * For the full copyright and license information, please view the LICENSE.md
  * file that was distributed with this source code.
@@ -14,12 +14,12 @@ use yii\helpers\Html;
 
 /**
  * @var yii\web\View $this
- * @var dektrium\user\models\User $user
- * @var dektrium\user\models\Profile $profile
+ * @var aminbbb92\user\models\User $user
+ * @var aminbbb92\user\models\Profile $profile
  */
 ?>
 
-<?php $this->beginContent('@dektrium/user/views/admin/update.php', ['user' => $user]) ?>
+<?php $this->beginContent('@aminbbb92/user/views/admin/update.php', ['user' => $user]) ?>
 
 <?php $form = ActiveForm::begin([
     'layout' => 'horizontal',

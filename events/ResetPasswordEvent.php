@@ -1,18 +1,18 @@
 <?php
 
 /*
- * This file is part of the Dektrium project.
+ * This file is part of the Amin project.
  *
- * (c) Dektrium project <http://github.com/dektrium/>
+ * (c) Amin project <http://github.com/aminbbb92/>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace dektrium\user\events;
+namespace aminbbb92\user\events;
 
-use dektrium\user\models\RecoveryForm;
-use dektrium\user\models\Token;
+use aminbbb92\user\models\RecoveryForm;
+use aminbbb92\user\models\Token;
 use yii\base\Event;
 
 /**
